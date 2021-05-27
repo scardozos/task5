@@ -1,8 +1,9 @@
 #!/bin/bash
-apt update
-apt install apache2
+sudo apt update
+sudo apt install apache2
 
 systemctl restart apache2.service
+sudo chown $USER:$USER /var/www/html/
 myip=$(curl --silent -H 'Metadata-Flavor: Google' metadata/computeMetadata/v1/instance/network-interfaces/0/ip)
 echo "This is my IP address: $myip"
 myMAC=$(curl --silent -H 'Metadata-Flavor: Google' metadata/computeMetadata/v1/instance/network-interfaces/0/mac)

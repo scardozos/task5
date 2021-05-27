@@ -8,15 +8,18 @@ echo "
 .table:first-of-type{
    float:left;
 }
-.table tr {
+table tr {
 	width:100%;
 	margin:0 auto;
 	padding:10px;
-
 }
-.table tr td {
+table, td {
+	border:1px solid black;
+}
+table tr td {
 	text-align:center;
 }
+
 table {
 	margin:0 auto;
 }

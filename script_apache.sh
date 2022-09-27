@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update
-sudo apt install apache2
+sudo apt install apache2 -y
 
 systemctl restart apache2.service
 sudo chown $USER:$USER /var/www/html/

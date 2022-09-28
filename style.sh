@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#hello
 echo \<style\>
 echo "
 .title{
